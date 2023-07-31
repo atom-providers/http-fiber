@@ -3,7 +3,7 @@ package httpFiber
 import (
 	"time"
 
-	"github.com/rogeecn/atom-addons/providers/log"
+	"github.com/atom-providers/log"
 	"github.com/rogeecn/atom/container"
 	"github.com/rogeecn/atom/contracts"
 	"github.com/rogeecn/atom/utils/opt"
@@ -53,7 +53,7 @@ func Provide(opts ...opt.Option) error {
 		return err
 	}
 
-	return container.Container.Provide(func(l *log.Logger) (contracts.Service, error) {
+	return container.Container.Provide(func(l *log.Logger) (contracts.HttpService, error) {
 		engine := fiber.New(fiber.Config{
 			EnablePrintRoutes: true,
 			StrictRouting:     true,
