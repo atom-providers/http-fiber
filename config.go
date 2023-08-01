@@ -1,4 +1,4 @@
-package http
+package httpFiber
 
 import (
 	"fmt"
