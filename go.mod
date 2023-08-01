@@ -5,12 +5,12 @@ go 1.18
 require (
 	github.com/atom-providers/log v0.0.0-20230801024233-a65b67115343
 	github.com/gofiber/fiber/v2 v2.47.0
-	github.com/rogeecn/atom v1.0.3
+	github.com/rogeecn/atom v1.0.4
 )
 
 require (
 	github.com/andybalholm/brotli v1.0.5 // indirect
-	github.com/brianvoe/gofakeit/v6 v6.22.0 // indirect
+	github.com/brianvoe/gofakeit/v6 v6.23.0 // indirect
 	github.com/fsnotify/fsnotify v1.6.0 // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
@@ -45,5 +45,5 @@ require (
 	golang.org/x/text v0.11.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	gorm.io/gorm v1.25.1 // indirect
+	gorm.io/gorm v1.25.2 // indirect
 )
