@@ -3,7 +3,7 @@ module github.com/atom-providers/http-fiber
 go 1.18
 
 require (
-	github.com/atom-providers/log v0.0.0-20230731102101-c690ec235b6c
+	github.com/atom-providers/log v0.0.0-20230801024233-a65b67115343
 	github.com/gofiber/fiber/v2 v2.47.0
 	github.com/rogeecn/atom v1.0.3
 )
@@ -25,7 +25,6 @@ require (
 	github.com/pelletier/go-toml/v2 v2.0.9 // indirect
 	github.com/philhofer/fwd v1.1.2 // indirect
 	github.com/rivo/uniseg v0.4.4 // indirect
-	github.com/rogpeppe/go-internal v1.10.0 // indirect
 	github.com/savsgio/dictpool v0.0.0-20221023140959-7bf2e61cea94 // indirect
 	github.com/savsgio/gotils v0.0.0-20230208104028-c358bd845dee // indirect
 	github.com/spf13/afero v1.9.5 // indirect
@@ -44,7 +43,6 @@ require (
 	go.uber.org/zap v1.24.0 // indirect
 	golang.org/x/sys v0.10.0 // indirect
 	golang.org/x/text v0.11.0 // indirect
-	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	gorm.io/gorm v1.25.2 // indirect
