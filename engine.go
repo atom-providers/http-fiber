@@ -3,6 +3,7 @@ package httpFiber
 import (
 	"time"
 
+	"github.com/atom-providers/app"
 	"github.com/atom-providers/log"
 	"github.com/rogeecn/atom/container"
 	"github.com/rogeecn/atom/contracts"
@@ -53,12 +54,15 @@ func Provide(opts ...opt.Option) error {
 		return err
 	}
 
-	return container.Container.Provide(func(l *log.Logger) (contracts.HttpService, error) {
+	return container.Container.Provide(func(appConf *app.Config, l *log.Logger) (contracts.HttpService, error) {
 		engine := fiber.New(fiber.Config{
-			EnablePrintRoutes: true,
+			EnablePrintRoutes: appConf.Mode == app.AppModeDevelopment,
 			StrictRouting:     true,
 		})
-		engine.Use(recover.New())
+
+		engine.Use(recover.New(recover.Config{
+			EnableStackTrace: true,
+		}))
 
 		if config.StaticRoute != nil && config.StaticPath != nil {
 			engine.Use(config.StaticRoute, config.StaticPath)
